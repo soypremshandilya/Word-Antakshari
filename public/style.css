@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.5s ease;
+}
+
+#game-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    transition: box-shadow 0.3s ease;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+p,
+#current-word {
+    font-size: 24px;
+    font-weight: 600;
+    color: #e74c3c;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+p {
+    color: #2c3e50;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    width: calc(100% - 140px);
+    max-width: 400px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+#submit-word {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#submit-word:hover {
+    background-color: #217dbb;
+    transform: translateY(-2px);
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #27ae60;
+    transition: color 0.3s ease;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f39c12;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #game-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    #submit-word {
+        width: 100%;
+    }
+}
