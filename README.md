@@ -94,7 +94,7 @@ Word Antakshari is an interactive web game based on the traditional game concept
 *Feedback when a valid word is submitted.*
 
 ### Invalid Word Submission
-![Invalid Word](screenshots/screenshot3.png)
+![Invalid Word](screenshots/Screenshot3.png)
 *Error message when an invalid word is submitted.*
 
 ---
